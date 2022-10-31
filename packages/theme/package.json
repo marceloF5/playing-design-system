@@ -1,0 +1,26 @@
+{
+  "name": "@ds/theme",
+  "version": "1.0.0",
+  "description": "",
+  "author": "marcelo.fortunato",
+  "private": true,
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --external react --watch",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "dependencies": {
+    "@ds/tokens": "*",
+    "@stitches/react": "^1.2.8"
+  },
+  "devDependencies": {
+    "@tooling/eslint-config": "*",
+    "@tooling/ts-config": "*",
+    "tsup": "^6.3.0",
+    "typescript": "^4.8.4"
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "extends": "@tooling/ts-config/base.json",
+    "include": [
+        "./src/**/*.ts",
+        "./src/**/*.tsx",
+    ]
+}

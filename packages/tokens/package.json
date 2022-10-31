@@ -1,0 +1,25 @@
+{
+  "name": "@ds/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "author": "marcelo.fortunato",
+  "private": true,
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --external react --watch",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "devDependencies": {
+    "@tooling/eslint-config": "*",
+    "@tooling/ts-config": "*",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "react": "^18.2.0",
+    "tsup": "^6.3.0",
+    "typescript": "^4.8.4"
+  }
+}

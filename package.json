@@ -1,0 +1,21 @@
+{
+  "name": "design-system-template",
+  "version": "1.0.0",
+  "description": "",
+  "author": "marcelo.fortunato",
+  "private": true,
+  "license": "MIT",
+  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^1.6.2"
+  }
+}

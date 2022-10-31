@@ -1,0 +1,7 @@
+{
+  "name": "@tooling/ts-config",
+  "version": "1.0.0",
+  "author": "marcelo.fortunato",
+  "private": true,
+  "license": "MIT"
+}
